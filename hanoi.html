@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Torre de Hanoi</title>
+    <link rel="stylesheet" href="hanoi.css">
+</head>
+
+<body>
+    <h1>Torre de Hanoi</h1>
+    <div class="tower-container">
+        <div id="tower-1" class="tower-1">
+            <div class="bar"></div>
+            <div id="stack-1" class="stack"></div>
+            <div class="base"></div>
+        </div>
+        <div id="tower-2" class="tower-2">
+            <div class="bar"></div>
+            <div id="stack-2" class="stack"></div>
+            <div class="base"></div>
+        </div>
+        <div id="tower-3" class="tower-3">
+            <div class="bar"></div>
+            <div id="stack-3" class="stack"></div>
+            <div class="base"></div>
+        </div>
+    </div>
+    <div class="button-container">
+        <div id="buttons-1" class="buttons">
+            <button class="button-move-disk" next="2">2</button>
+            <button class="button-move-disk" next="3">3</button>
+        </div>
+        <div id="buttons-2" class="buttons">
+            <button class="button-move-disk" next="1">1</button>
+            <button class="button-move-disk" next="3">3</button>
+        </div>
+        <div id="buttons-3" class="buttons">
+            <button class="button-move-disk" next="1">1</button>
+            <button class="button-move-disk" next="2">2</button>
+        </div>
+    </div><br>
+    <footer>
+        <label for="disks-quantity">Número de discos:</label>
+        <input type="text" id="disks-quantity">
+        <button id="button-create-disks">Iniciar</button>
+        <p score="0" id="score" disksQuantity="0">Número de Jogadas: 0</p>
+    </footer>
+    <script src="hanoi.js"></script>    
+</body>
+
+</html>
